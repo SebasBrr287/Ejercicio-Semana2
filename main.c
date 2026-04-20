@@ -94,7 +94,7 @@ int main (int argc, char *argv[]) {
             }
             break;
             case 5:
-            printf("Ingrese el numero del estudiante del 0 al %d: ", contE - 1);
+            printf("Ingrese el numero del estudiante desde el cero: ");
             scanf("%d", &selE);
                 float max = cal[selE][0][0], min = cal[selE][0][0];
                 for(int i=0; i<3; i++)
