@@ -13,6 +13,7 @@ int main (int argc, char *argv[]) {
     int opc = 0, opc2 = 0;
     int contE = 0;
     int selE=0;
+    int aux = 0;
 
     do{
         printf("Seleccione una opcion:\n");
@@ -22,9 +23,14 @@ int main (int argc, char *argv[]) {
         printf("4.Promedios por asignatura\n");
         printf("5.Calificacione mas alta y baja por estudiante\n");
         printf("6.Calificacione mas alta y baja por asignatura\n");
-        printf(">> ");
-        scanf("%d",&opc);
-
+ do{
+            printf(">> ");
+            aux = scanf("%d",&opc);
+            if(aux != 1 || opc < 0){
+                printf("Ingrese una opcion valida\n");
+                while(getchar() != '\n');
+            }
+        }while (aux != 1 || opc < 0);
         switch (opc)
         {
         case 1:
@@ -109,11 +115,6 @@ int main (int argc, char *argv[]) {
                     }
                     printf("%s -> Aprobados: %d, Reprobados: %d\n", asignaturas[i], ap, rep);
                 }
-                break;
-                
-                default: printf("Opcion invalida.\n");
-                while(getchar() != '\n');
-                opc2 = 1; 
                 break;
 
         }
