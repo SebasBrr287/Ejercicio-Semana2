@@ -77,8 +77,6 @@ int main (int argc, char *argv[]) {
                                                             nombres[i]);
             }
             break;
-
-            break;
         case 4:
 
             float promAsig[3]={0};
