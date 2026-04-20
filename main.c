@@ -6,8 +6,8 @@
         float cal[5][3][3]={0};
         char nombres[5][20];
         char asignaturas[3][20]={"Fisica",
-                            "Quimica",
-                            "Calculo"};
+                                "Quimica",
+                                "Calculo"};
 
         float prom[5][3]={0};
         int opc = 0, opc2 = 0;
